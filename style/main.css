@@ -1,0 +1,56 @@
+body {
+  background-color: #051d3b;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #FFF;
+}
+
+.logo {
+  width: 145px;
+  height: 50px;
+  top: 12px;
+}
+
+#campo_busca {
+  width: 752px;
+  height: 50px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  border: none;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+#campo_busca::placeholder {
+    color: #fff;
+    opacity: 0.64;
+    font-family: sans-serif;
+    padding-left: 13px;
+}
+
+.perfil {
+    display: inline-flex;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+.perfil img {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+
+.perfil p {
+    line-height: 24px;
+}
