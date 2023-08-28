@@ -55,12 +55,18 @@ header {
   line-height: 24px;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+}
+
 .menu {
-  width: 189px;
+  width: 184px;
   height: 146px;
 }
 
-.menu p {
+.legenda {
   color: #fff;
   font-size: 12px;
   font-style: normal;
@@ -71,7 +77,7 @@ header {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn_menu {
@@ -84,8 +90,8 @@ a {
   border-radius: 16px;
   width: 48px;
   height: 48px;
-  
-  background-color: #5081FB29;
+
+  background-color: #5081fb29;
   /* opacity: 16%; */
   display: flex;
   justify-content: center;
@@ -93,18 +99,17 @@ a {
 }
 
 a:hover {
-   transition: 0.5s;
-    background-color: #5081fb;
-    opacity: 100%;
-    border-radius: 16px;
+  transition: 0.5s;
+  background-color: #5081fb;
+  opacity: 100%;
+  border-radius: 16px;
 }
 
 a:focus {
-     background-color: #5081fb !important;
-     opacity: 100% !important;
-     border-radius: 16px;
- }
- 
+  background-color: #5081fb !important;
+  opacity: 100% !important;
+  border-radius: 16px;
+}
 
 .icone-editor-codigo {
   background-image: url(../assets/icons/icon_code.svg);
@@ -119,4 +124,30 @@ a:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.editor__codigo {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #6bd1ff;
+  width: 752px;
+  height: 366px;
+  margin-left: 109px;
+  justify-content: center;
+}
+
+.editor_codigo {
+  background: #000;
+  width: 688px;
+  height: 302px;
+  border-radius: 8px;
+  box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.24);
+}
+
+.configuracao_projeto {
+  width: 270px;
 }
