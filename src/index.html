@@ -56,7 +56,27 @@
       </div>
       <div class="editor__codigo">
         <div class="editor_codigo">
-          
+          <img src="../assets/icons/mac_buttons.svg" alt="Botões do macbook" />
+          <textarea
+            name="campo_editor_codigo"
+            id="campo_editor_codigo"
+            cols="90"
+            rows="20"
+            placeholder="
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+accum[key], obj) 
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),
+res) 
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => { 
+    const res = f(seed) 
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc 
+  } 
+return go(f, seed, []) }
+            "
+          ></textarea>
         </div>
       </div>
       <div class="configuracao_projeto">
