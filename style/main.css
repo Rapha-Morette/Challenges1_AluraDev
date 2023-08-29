@@ -126,17 +126,27 @@ a:focus {
   line-height: 24px;
 }
 
+.container_central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+  border-radius: 8px;
+  margin-left: 109px;
+  justify-content: center;
+}
+
 .editor__codigo {
   display: flex;
-  padding: 5px;
-  flex-direction: column;
+  /* padding: 5px; */
   align-items: center;
   gap: 10px;
   border-radius: 8px;
   background: #6bd1ff;
   width: 752px;
   height: 366px;
-  margin-left: 109px;
+  /* margin-left: 109px; */
   justify-content: center;
 }
 
@@ -165,6 +175,27 @@ a:focus {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.btn-highlight button {
+  width: 752px;
+  height: 56px;
+  border-radius: 8px;
+  background: #5081fb14;
+  /* background: rgba(80, 129, 251, 0.08); */
+  color: #fff;
+  border: none;
+
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.btn-highlight button:hover {
+  background-color: #5081fb29;
 }
 
 .configuracao_projeto {

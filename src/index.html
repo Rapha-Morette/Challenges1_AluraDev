@@ -54,15 +54,19 @@
           </div>
         </div>
       </div>
-      <div class="editor__codigo">
-        <div class="editor_codigo">
-          <img src="../assets/icons/mac_buttons.svg" alt="Botões do macbook" />
-          <textarea
-            name="campo_editor_codigo"
-            id="campo_editor_codigo"
-            cols="90"
-            rows="20"
-            placeholder="
+      <div class="container_central">
+        <div class="editor__codigo">
+          <div class="editor_codigo">
+            <img
+              src="../assets/icons/mac_buttons.svg"
+              alt="Botões do macbook"
+            />
+            <textarea
+              name="campo_editor_codigo"
+              id="campo_editor_codigo"
+              cols="90"
+              rows="20"
+              placeholder="
 const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
 accum[key], obj) 
 
@@ -76,7 +80,11 @@ const unfold = (f, seed) => {
   } 
 return go(f, seed, []) }
             "
-          ></textarea>
+            ></textarea>
+          </div>
+        </div>
+        <div class="btn-highlight">
+          <button type="button">Visualizar com o highlight</button>
         </div>
       </div>
       <div class="configuracao_projeto">
