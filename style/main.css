@@ -7,14 +7,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   color: #fff;
+  width: 1886px;
 }
 
 .logo {
   width: 145px;
   height: 50px;
   top: 12px;
+}
+
+.campo__busca {
+  margin-left: 20px;
 }
 
 #campo_busca {
@@ -106,7 +110,7 @@ a:hover {
   border-radius: 16px;
 }
 
-a:focus {
+a:focus, .btn_menu:nth-child(2) a  {
   background-color: #5081fb !important;
   opacity: 100% !important;
   border-radius: 16px;
@@ -233,7 +237,8 @@ select#linguagem_programacao {
 }
 
 select#linguagem_programacao option {
-  background: #7d83f6;
+  background: #006699;
+  font-size: 16px;
 }
 
 .campo__background {
@@ -273,4 +278,8 @@ button.btn_salvar-projeto {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+button.btn_salvar-projeto:hover {
+  background: #7599f7;
 }
