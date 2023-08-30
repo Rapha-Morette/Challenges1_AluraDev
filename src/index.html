@@ -88,13 +88,43 @@ return go(f, seed, []) }
         </div>
       </div>
       <div class="configuracao_projeto">
-        <p class="legenda">Seu Projeto</p>
-        <input
-          type="text"
-          name="titulo_projeto"
-          id="titulo_projeto"
-          placeholder="Nome do seu projeto"
-        />
+        <div class="seu__projeto">
+          <p class="legenda">Seu Projeto</p>
+          <input
+            class="campos-configuracao"
+            type="text"
+            name="titulo_projeto"
+            id="titulo_projeto"
+            placeholder="Nome do seu projeto"
+          />
+          <input
+            class="campos-configuracao"
+            type="text"
+            name="descricao_projeto"
+            id="descricao_projeto"
+            placeholder="Descrição do projeto"
+          />
+        </div>
+        <div class="personalizacao">
+          <p class="legenda">Personalização</p>
+
+          <select
+            class="campos-configuracao"
+            name="linguagem_programacao"
+            id="linguagem_programacao"
+          >
+            <option value="" selected>Escolha a linguagem do projeto</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+
+          <div class="campo__background" class="campos-configuracao">
+            <button type="button" class="btn_azul"></button>
+          </div>
+
+        </div>
+        <button class="btn_salvar-projeto">
+          Salvar projeto
+        </button>
       </div>
     </main>
   </body>
