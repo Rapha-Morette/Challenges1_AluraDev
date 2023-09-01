@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/dracula.css" />
     <title>Alura dev</title>
     <script
       src="https://kit.fontawesome.com/41a4669b5c.js"
@@ -12,11 +13,13 @@
   </head>
   <body>
     <header>
-      <img
-        src="../assets/images/Logo-plataforma.png"
-        alt="Logo alura-dev"
-        class="logo"
-      />
+      <div class="pagina__logo">
+        <img
+          src="../assets/images/Logo-plataforma.png"
+          alt="Logo alura-dev"
+          class="logo"
+        />
+      </div>
       <div class="campo__busca">
         <input
           type="text"
@@ -34,7 +37,7 @@
       <div class="menu">
         <p class="legenda">Menu</p>
         <div class="btn_menu">
-          <a href="#">
+          <a href="#" class="selecionado">
             <div class="icone">
               <i class="fa-solid fa-code" style="color: #ffffff"></i>
             </div>
@@ -44,7 +47,7 @@
           </div>
         </div>
         <div class="btn_menu">
-          <a href="#">
+          <a href="../src/comunidade.html">
             <div class="icone">
               <i class="fa-solid fa-users" style="color: #ffffff"></i>
             </div>
@@ -61,7 +64,7 @@
               src="../assets/icons/mac_buttons.svg"
               alt="Botões do macbook"
             />
-            <textarea
+            <!-- <textarea
               name="campo_editor_codigo"
               id="campo_editor_codigo"
               cols="90"
@@ -80,11 +83,12 @@ const unfold = (f, seed) => {
   } 
 return go(f, seed, []) }
             "
-            ></textarea>
+            ></textarea> -->
+            <code class="preview hljs" contenteditable="true" aria-label="Editor de código">function teste() {}</code>
           </div>
         </div>
         <div class="btn-highlight">
-          <button type="button">Visualizar com o highlight</button>
+          <button class="botao_highlight" type="button">Visualizar com o highlight</button>
         </div>
       </div>
       <div class="configuracao_projeto">
@@ -113,19 +117,19 @@ return go(f, seed, []) }
             name="linguagem_programacao"
             id="linguagem_programacao"
           >
-            <option value="" selected>Escolha a linguagem do projeto</option>
-            <option value="javascript">JavaScript</option>
+            <option value="Nulo">Escolha a linguagem do projeto</option>
+            <option value="javascript" selected>JavaScript</option>
           </select>
 
           <div class="campo__background" class="campos-configuracao">
             <button type="button" class="btn_azul"></button>
           </div>
-
         </div>
-        <button class="btn_salvar-projeto">
-          Salvar projeto
-        </button>
+        <button class="btn_salvar-projeto">Salvar projeto</button>
       </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="index.js"></script>
   </body>
 </html>

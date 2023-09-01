@@ -8,7 +8,11 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  width: 1886px;
+  padding-right: 20px;
+}
+
+.pagina__logo {
+  width: 166px;
 }
 
 .logo {
@@ -17,9 +21,9 @@ header {
   top: 12px;
 }
 
-.campo__busca {
+/* .campo__busca {
   margin-left: 20px;
-}
+} */
 
 #campo_busca {
   width: 752px;
@@ -110,7 +114,8 @@ a:hover {
   border-radius: 16px;
 }
 
-a:focus, .btn_menu:nth-child(2) a  {
+a:focus,
+.btn_menu .selecionado {
   background-color: #5081fb !important;
   opacity: 100% !important;
   border-radius: 16px;
@@ -169,11 +174,26 @@ a:focus, .btn_menu:nth-child(2) a  {
   gap: 24px;
 }
 
-.editor_codigo textarea {
+.editor_codigo code {
   color: #fff;
   background-color: #000;
   border: none;
 }
+
+.preview{
+  display: block;
+
+  padding: 10px;
+  
+  box-sizing: border-box;
+
+  border-radius: 7px;
+
+  height: 100%;
+
+  white-space: pre-wrap;
+}
+
 .editor_codigo textarea::placeholder {
   color: #fff;
   font-size: 14px;
