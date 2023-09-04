@@ -64,12 +64,11 @@
               src="../assets/icons/mac_buttons.svg"
               alt="Botões do macbook"
             />
-            <!-- <textarea
-              name="campo_editor_codigo"
-              id="campo_editor_codigo"
-              cols="90"
-              rows="20"
-              placeholder="
+            <code
+              class="preview hljs"
+              contenteditable="true"
+              aria-label="Editor de código"
+            >
 const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
 accum[key], obj) 
 
@@ -82,13 +81,13 @@ const unfold = (f, seed) => {
     return res ? go(f, res[1], acc.concat([res[0]])) : acc 
   } 
 return go(f, seed, []) }
-            "
-            ></textarea> -->
-            <code class="preview hljs" contenteditable="true" aria-label="Editor de código">function teste() {}</code>
+            </code>
           </div>
         </div>
         <div class="btn-highlight">
-          <button class="botao_highlight" type="button">Visualizar com o highlight</button>
+          <button class="botao_highlight" type="button">
+            Visualizar com o highlight
+          </button>
         </div>
       </div>
       <div class="configuracao_projeto">
@@ -119,17 +118,24 @@ return go(f, seed, []) }
           >
             <option value="Nulo">Escolha a linguagem do projeto</option>
             <option value="javascript" selected>JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="typescript">Typescript</option>
+            <option value="java">Java</option>
           </select>
 
           <div class="campo__background" class="campos-configuracao">
-            <button type="button" class="btn_azul"></button>
+            <button type="button" class="btn_background" onclick="mudaCorEditor('azul')"><span class="azul"></span></button>
+            <button type="button" class="btn_background" onclick="mudaCorEditor('verde')"><span class="verde"></span></button>
           </div>
         </div>
         <button class="btn_salvar-projeto">Salvar projeto</button>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <script src="index.js"></script>
   </body>
 </html>
