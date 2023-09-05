@@ -203,7 +203,7 @@ code.preview {
 }
 
 .btn-highlight button {
-  width: 752px;
+  width: 782px;
   height: 56px;
   border-radius: 8px;
   background: #5081fb14;
@@ -287,28 +287,31 @@ button.btn_background {
   justify-content: center;
 }
 
-button.btn_background span.azul {
+button.btn_background span {
   width: 95%;
   height: 80%;
   border-radius: 4px;
   border: solid 0.5px #fff;
+}
+
+button.btn_background span.azul {
   background: #6bd1ff;
 }
 button.btn_background span.verde {
-  width: 95%;
-  height: 80%;
-  border-radius: 4px;
-  border: solid 0.5px #fff;
   background: #27C93F;
 }
 
-button.btn_background span.azul:hover {
+button.btn_background span.rosa {
+  background: #FF6BCD;
+}
+
+button.btn_background span:hover {
   transition: 0.1s;
   width: 100%;
   height: 85%;
 }
 
-button.btn_background:focus span.azul {
+button.btn_background:focus span {
   width: 100%;
   height: 85%;
 }
@@ -321,6 +324,16 @@ button.btn_background:hover {
 button.btn_background:focus {
   border: solid 3px #fff;
 }
+
+.botao_selecionado{
+  border: solid 3px #fff !important;
+}
+
+.botao_selecionado span {
+  width: 100% !important;
+  height: 85% !important;
+}
+
 
 button.btn_salvar-projeto {
   display: flex;
